@@ -115,8 +115,9 @@ main .aside .iconfont {
 main .aside .iconfont:hover {
   color: #fff;
 }
-
-
+main .aside .iconfont.active {
+  color: #f55828;
+}
 main .detail {
   margin-left: 56vh;
   color: #fff;
@@ -153,6 +154,8 @@ main .area-bar .bar {
   height: .8vh;
   border-radius: .2vh;
   background: rgba(255,255,255,0.3);
+  cursor: pointer;
+  
 }
 main .area-bar .current-time {
   width: 3vh;
@@ -162,18 +165,19 @@ main .area-bar .current-time {
 main .area-bar .bar-progress {
   position: absolute;
   height: .8vh;
-  width: 30%;
+  width: 10%;
   background-color: #fff;
   border-radius: .2vh;
+  transition: width .8s;
 }
-main .autor {
+main .author {
   font-size: 3vh;
   margin-top: 3vh;
 }
-main .lyrice {
-  font-size: 2vh;
+main .lyric {
+  font-size: 3vh;
   margin-top: 2vh;
-  color: rgba(255,255,255,0.3);
+  color: rgba(119, 239, 255, 0.616);
 }
 
 
@@ -183,9 +187,18 @@ footer {
   background: rgba(255,255,255,0.3);
   box-shadow: 0px -.1vh .1vh .1vh;
 }
-
+footer>.layout {
+  position: relative;
+}
+footer ul {
+  position: absolute;
+  left: 0;
+}
 footer .box {
   position: relative;
+  overflow: hidden;
+  height: 24vh;
+
 }
 footer ul:after {
   content: '';
@@ -218,9 +231,12 @@ footer h3 {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+footer li.active {
+  box-shadow: 0 0 .5vh .5vh rgba(255,255,255,0.5);
+}
 footer .iconfont {
   position: absolute;
-  top: 4vh;
+  top: 6vh;
   font-size: 6vh;
   color: rgba(255,255,255,0.3);
   opacity: 0;
@@ -238,4 +254,8 @@ footer .icon-left {
 }
 footer .icon-right {
   right: -8vh;
+}
+
+.boomText {
+  display: inline-block;
 }

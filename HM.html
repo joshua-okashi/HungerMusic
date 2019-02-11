@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="referrer" content="never">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./HM.css">
-  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1024151_3e5gllfwyi8.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/font_1024151_xoot19td2a.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css">
   <title>Document</title>
 </head>
 <body>
@@ -14,9 +16,9 @@
       <div class="aside">
         <figure></figure>
         <div class="actions">
-          <span class="iconfont icon-aixin"></span>
-          <span class="iconfont icon-play"></span>
-          <span class="iconfont icon-forward"></span>
+          <span class="btn-collect iconfont icon-aixin"></span>
+          <span class="btn-play iconfont icon-play"></span>
+          <span class="btn-next iconfont icon-forward"></span>
         </div>
       </div>
       <div class="detail">
@@ -31,42 +33,45 @@
           <div class="bar">
             <div class="bar-progress"></div>
           </div>
-          <div class="current-time">2:00</div>
+          <div class="current-time">0:00</div>
         </div> 
-          <div class="autor">森羅万象</div>
-          <div class="lyrice">
-            <p>Check me out now </p>
+          <div class="author">森羅万象</div>
+          <div class="lyric">
+            <p>lyric</p>
           </div>       
       </div>
     </main>
     <footer>
-      <div class="box layout">
-        <span class="iconfont icon-left"></span>
-        <span class="iconfont icon-right"></span>
-        <ul>
-          <li>
-            <div class="cover" style="background-image: url(./music/あの日の夢のアリス%20〜DAY%20DREAM/cover.jpg)"></div>
-            <h3>あの日の夢のアリス 〜DAY 20DREAM</h3>
-          </li>
-          <li>
-            <div class="cover" style="background-image: url(./music/Pure%20Heart/cover.jpg)"></div>
-            <h3>Pure Heart</h3>
-          </li>
-          <li>
-            <div class="cover" style="background-image: url(./music/紅魔郷いろいろ詰め合わせセット/cover.jpg)"></div>
-            <h3>紅魔郷いろいろ詰め合わせセット</h3>
-          </li>
-          <li>
-            <div class="cover" style="background-image: url(./music/往昔とすれ違う夢/cover.jpg)"></div>
-            <h3>往昔とすれ違う夢</h3>
-          </li>
-        </ul>
+      <div class="layout">
+          <span class="iconfont icon-left"></span>
+          <span class="iconfont icon-right"></span>
+          <div class="box">
+              <ul>
+                <li>
+                  <div class="cover" style="background-image: url(./music/あの日の夢のアリス%20〜DAY%20DREAM/cover.jpg)"></div>
+                  <h3>あの日の夢のアリス 〜DAY 20DREAM</h3>
+                </li>
+                <li>
+                  <div class="cover" style="background-image: url(./music/Pure%20Heart/cover.jpg)"></div>
+                  <h3>Pure Heart</h3>
+                </li>
+                <li>
+                  <div class="cover" style="background-image: url(./music/紅魔郷いろいろ詰め合わせセット/cover.jpg)"></div>
+                  <h3>紅魔郷いろいろ詰め合わせセット</h3>
+                </li>
+                <li>
+                  <div class="cover" style="background-image: url(./music/往昔とすれ違う夢/cover.jpg)"></div>
+                  <h3>往昔とすれ違う夢</h3>
+                </li>
+              </ul>
+            </div>
       </div>
     </footer>
   </section>
   <section id="page-cover"></section>
-  <div class="page-bg"></div>
+  <div class="page-bg"></div> 
 
+  <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
   <script src="./HM.js"></script>
 </body>
 </html>
